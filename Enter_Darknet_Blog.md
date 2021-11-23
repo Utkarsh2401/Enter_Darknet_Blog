@@ -98,15 +98,6 @@ The accuracy of the model for classification of images is not that good as it is
 
 ![CNN Model](./assets/CNN_Model.png "CNN Model Image")
 
-#### Training Graph
-
-![CNN Model Training Graph](./assets/CNN_TrainingGraph.png "CNN Training Graph")
- 
-```Average Loss = 4.4057```
- 
-#### Result
-![CNN Model Output](./assets/CNN_Output.png "CNN Output")
-
 ### ResNet_34 Model
 
 This model is inspired by the [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) research paper by Microsoft Research.
@@ -122,16 +113,6 @@ By using the residual network, there are many problems which can be solved such 
 ResNets can easily gain accuracy from greatly increased depth, producing results which are better than previous networks. Our model has 34 convolutional layers with one max pooling layer and multiple shortcuts.
 
 ![ResNet34 Model](./assets/ResNet_34_Model.png "ResNet34 Model Image")
-
-#### Training Graph
-
-![ResNet34 Training Graph](./assets/ResNet_34_TrainingGraph.png "ResNet34 Training Graph")
- 
-```Average Loss = 1.7484```
- 
-#### Result
- 
-![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
 
 ## Training The Model
 
@@ -167,3 +148,26 @@ Using this file we will now predict outputs.
 ```
 ./darknet classifier predict cfg/cifar.data cfg/ResNet_34.cfg backup/ResNet_34_final.weights
 ```
+## Training Graphs
+
+### CNN Model
+
+![CNN Model Training Graph](./assets/CNN_TrainingGraph.png "CNN Training Graph")
+ 
+```Average Loss = 4.4057```
+
+### ResNet_34 Model
+
+![ResNet34 Training Graph](./assets/ResNet_34_TrainingGraph.png "ResNet34 Training Graph")
+ 
+```Average Loss = 1.7484```
+  
+## Results
+
+### CNN Model
+
+![CNN Model Output](./assets/CNN_Output.png "CNN Output")
+
+### ResNet_34 Model
+
+![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
