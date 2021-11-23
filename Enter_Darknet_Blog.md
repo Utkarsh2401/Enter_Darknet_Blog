@@ -89,6 +89,15 @@ Also make the cifar.data file in the cfg folder of the cloned darknet repository
 ### Models
 
 ### CNN Model
+We created our own model for the CIFAR-10 dataset and use a config (.cfg) file of the
+model to train the dataset. The image below shows our model. 
+This model is inspired by the week 2 assignment in the course Convolutional Neural Networks by Andrew NG on Coursera. It is a very small and simple model for image classification. 
+It consists of 2 convolutional layers and 2 max pooling layers and a connected layer. 
+The last connected layer has 10 filters because we have 10 classes.   
+This will give us our 10 predictions.  
+We use a softmax to convert the predictions into a probability distribution.  
+The accuracy of the model for classification of images is not that good as it is not complex or deep. 
+We made this model to help us understand the working of a config file and to build our basics to make a better and more complex model.
 
 ![CNN Model](./assets/CNN_Model.png "CNN Model Image")
 
@@ -101,9 +110,19 @@ Also make the cifar.data file in the cfg folder of the cloned darknet repository
 #### Result
 ![CNN Model Output](./assets/CNN_Output.png "CNN Output")
 
-#### ResNet_34 Model
+### ResNet_34 Model
 
 This model is inspired by the [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) research paper by Microsoft Research.
+
+This image shows the 34-layer residual network we will be using for our model for image classification on the CIFAR-10 dataset. 
+It is inspired by the ‘Deep Residual Learning for Image Recognition’ research paper written by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun of Microsoft Research. 
+Deep convolutional neural networks have achieved the human level image classification result. 
+When the deeper network starts to converge, a degradation problem has been exposed: with the network depth increasing, accuracy gets saturated (which might be unsurprising) and then degrades rapidly.  
+Such degradation is not caused by overfitting or by adding more layers to a deep network leads to higher training error.  The deterioration of training accuracy shows that not all systems are easy to optimize. To overcome this problem, Microsoft introduced a deep residual learning framework.  
+Instead of hoping every few stacked layers directly fit a desired underlying mapping, they explicitly let these layers fit a residual mapping.   
+Shortcut connections are those skipping one or more layers. The shortcut connections perform identity mapping, and their outputs are added to the outputs of the stacked layers.   
+By using the residual network, there are many problems which can be solved such as: ResNets are easy to optimize, but the “plain” networks (that simply stack layers) show higher training error when the depth increases. 
+ResNets can easily gain accuracy from greatly increased depth, producing results which are better than previous networks. Our model has 34 convolutional layers with one max pooling layer and multiple shortcuts.
 
 ![ResNet34 Model](./assets/ResNet_34_Model.png "ResNet34 Model Image")
 
