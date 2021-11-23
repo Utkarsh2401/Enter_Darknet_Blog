@@ -172,6 +172,10 @@ Using this file we will now predict outputs.
 
 ![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
 
+## Future Prospects
+Even though we have chosen an extremely small dataset and a simple training model keeping in mind our limited resources and computational power, while training from scratch, Darknet in itself is a high performance open source framework for the implementation of neural networks. Written in C and CUDA, it can be integrated with CPUs and GPUs,and show exemplary performance at both when used correctly. 
+Advanced implementations of deep neural networks can be done using Darknet. These implementations include You Only Look Once (YOLO) for real-time object detection, ImageNet classification, recurrent neural networks (RNNs), and many others. 
+
 ## Contributors
 * [Utkarsh Gandhi](https://github.com/Utkarsh2401)
 * [Sarrah Bastawala](https://github.com/sarrah-basta)
