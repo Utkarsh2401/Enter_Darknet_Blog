@@ -93,11 +93,8 @@ We created our own model for the CIFAR-10 dataset and use a config (.cfg) file o
 model to train the dataset. The image below shows our model. 
 This model is inspired by the week 2 assignment in the course Convolutional Neural Networks by Andrew NG on Coursera. It is a very small and simple model for image classification. 
 It consists of 2 convolutional layers and 2 max pooling layers and a connected layer. 
-The last connected layer has 10 filters because we have 10 classes.   
-This will give us our 10 predictions.  
-We use a softmax to convert the predictions into a probability distribution.  
-The accuracy of the model for classification of images is not that good as it is not complex or deep. 
-We made this model to help us understand the working of a config file and to build our basics to make a better and more complex model.
+The last connected layer has 10 filters because we have 10 classes. This will give us our 10 predictions. We use a softmax to convert the predictions into a probability distribution.  
+The accuracy of the model for classification of images is not that good as it is not complex or deep. We made this model to help us understand the working of a config file and to build our basics to make a better and more complex model.
 
 ![CNN Model](./assets/CNN_Model.png "CNN Model Image")
 
