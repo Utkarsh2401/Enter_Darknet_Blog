@@ -87,3 +87,32 @@ Follow instructions at this [link](https://pjreddie.com/darknet/train-cifar/) to
 Also make the cifar.data file in the cfg folder of the cloned darknet repository from the above, but since we will be using our own config files, we don't need the cifra_small.cfg file from the above link.
 
 ### Models
+
+### CNN Model
+
+![CNN Model](./assets/CNN_Model.png "CNN Model Image")
+
+#### Training Graph
+
+![CNN Model Training Graph](./assets/CNN_TrainingGraph.png "CNN Training Graph")
+ 
+```Average Loss = 4.4057```
+ 
+#### Result
+![CNN Model Output](./assets/CNN_Output.png "CNN Output")
+
+#### ResNet_34 Model
+
+This model is inspired by the [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) research paper by Microsoft Research.
+
+![ResNet34 Model](./assets/ResNet_34_Model.png "ResNet34 Model Image")
+
+#### Training Graph
+
+![ResNet34 Training Graph](./assets/ResNet_34_TrainingGraph.png "ResNet34 Training Graph")
+ 
+```Average Loss = 1.7484```
+ 
+#### Result
+ 
+![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
