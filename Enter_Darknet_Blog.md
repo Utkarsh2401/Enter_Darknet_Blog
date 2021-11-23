@@ -171,3 +171,15 @@ Using this file we will now predict outputs.
 ### ResNet_34 Model
 
 ![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
+
+## Contributors
+* [Utkarsh Gandhi](https://github.com/Utkarsh2401)
+* [Sarrah Bastawala](https://github.com/sarrah-basta)
+
+## Acknowledgements And Resources
+
+* [SRA VJTI](https://sravjti.in/) Eklavya 2021
+* [pjreddie](https://pjreddie.com/)
+* [AlexeyAB](https://github.com/AlexeyAB/darknet)
+* [Project Drive](https://drive.google.com/drive/u/1/folders/1RWdPRY5_vRV82a5bEDPjy3V8FqGq6T5Z)
+* Speacial thanks to our mentors [Aman Chhaparia](https://github.com/amanchhaparia) and [Prathamesh Tagore](https://github.com/meshtag) and to the whole SRA Team for guiding us throughout this project.
