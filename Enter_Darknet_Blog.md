@@ -86,7 +86,7 @@ Follow instructions at this [link](https://pjreddie.com/darknet/train-cifar/) to
 
 Also make the cifar.data file in the cfg folder of the cloned darknet repository from the above, but since we will be using our own config files, we don't need the cifra_small.cfg file from the above link.
 
-### Models
+## Models
 
 ### CNN Model
 We created our own model for the CIFAR-10 dataset and use a config (.cfg) file of the
@@ -132,3 +132,38 @@ ResNets can easily gain accuracy from greatly increased depth, producing results
 #### Result
  
 ![ResNet34 Model Output](./assets/ResNet34_Output.png "ResNet34 Output")
+
+## Training The Model
+
+After making the cfg files, we are ready to train our models now using the CIFAR-10 dataset!
+
+#### For training with the CNN Model
+
+```
+cd darknet
+./darknet classifier train cfg/cifar.data cfg/CNN.cfg
+```
+
+#### For training with the ResNet Model
+
+```
+cd darknet
+./darknet classifier train cfg/cifar.data cfg/ResNet_34.cfg
+```
+
+## Predicting
+
+After training, we get a .weights file which stores the weights of the model.
+Using this file we will now predict outputs.
+
+#### To predict using the CNN Model
+
+```
+./darknet classifier predict cfg/cifar.data cfg/CNN.cfg backup/CNN_final.weights
+```
+
+#### To predict using the ResNet Model
+
+```
+./darknet classifier predict cfg/cifar.data cfg/ResNet_34.cfg backup/ResNet_34_final.weights
+```
