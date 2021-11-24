@@ -3,11 +3,12 @@ This blog is about our project in the Eklavya Mentorship Program by SRA VJTI.
 Here we have documented our journey through the world of Darknet and we hope that this will be a great starting point for others who wish to explore it!
 
 ![Darknet, Intro Image](./assets/darknet-main-pic-name.png)
+##### Note: Editing skills are applied on images under professional guidance to make project seem cooler than it appears.
 
 ## About This Project
 
 ### Aim
-The main aim of the project is to develop a general understanding of the darknet framework and its uses in deep learning and object detection, thereby applying our knowledge to the use of image classification using a CNN model.
+The main aim of the project was to explore the darknet framework and its uses in deep learning and object detection, thereby applying our knowledge to the use of image classification using a CNN model.
 
 ### Domains Explored In This Project
 * Deep Learning and Convolutional Neural Networks.
@@ -16,14 +17,14 @@ The main aim of the project is to develop a general understanding of the darknet
 * Computer Vision.
   
 ### What Is Darknet ?
-[Darknet](https://pjreddie.com/darknet/) is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation. You can find the source on [GitHub](https://github.com/AlexeyAB/darknet).
+[Darknet](https://pjreddie.com/darknet/) is an open source neural network framework written in C and CUDA. Basically, we spent a total of six weeks researching and understanding about this framework, as compared to other more commonly known libraries such as Tensorflow and Keras, it is fast, easy to install, and supports CPU and GPU computation. Based on this blog, if you too would like to try tyour hand at using it for your AI expeditions, you can find the source on [GitHub](https://github.com/AlexeyAB/darknet).
 
 ![Darknet Logo](./assets/Darknet_Logo.png "Darknet Logo")
 
 The darknet framework has a variety of uses, the most prominent ones being object detection and image classification.  
 It is used to classify images ImageNet challenge or to train a classifier on CIFAR-10 dataset.  
 
-You only look once (YOLO) is a state-of-the-art, real-time object detection system which uses the darknet framework.
+You only look once (YOLO) is a state-of-the-art, real-time object detection system which uses the darknet framework. Even though we don't use this a lot in our project, using some of the inbuilt config files in the darknet repo that include yolo, yolov2, the most commonly used used yolov3, and even yolov4, darknet makes magic come alive with as easy as a few clicks to train huge datsets and use it for a world of extremely accurate object detection.
 
 ![YOLO](./assets/yolo.png "Yolo Comparison Graph")
 
@@ -35,6 +36,10 @@ By using convolutional neural networks we make an effective trainable model usin
 
 To train the model we pass a config file, a data file including the paths of our data set and labels to a darknet train command. We then use it to generate a weights file. Which is passed along with the configured data file during the testing of any image and applies the correct values in the model. Once the model is trained and an image is passed on to it for testing, it classifies the image according to the output of its final softmax layer and prints the probability or percentage of the image being each of the given labels.
 
+## Workflow 
+
+![Workflow_Diagram](./assets/workflow_diagram.jpg "Workflow")
+##### After a whole lot of research, some procrastination and an effort at teamwork, this is how we ended up going about our project.
 ## Setting Up Darknet in Linux
 The first thing we need to do is install and set up darknet.  
 We will be using a Linux environment for the setup, but if it is not available then setting it up in Google Colab or a virtual machine would also work.
